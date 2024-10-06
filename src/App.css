@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-group-item {
+  border: none; 
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.list-group-item:hover {
+  background-color: #f1f1f1; 
+}
+
+.btn {
+  border-radius: 2px;
+  margin-left: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  outline: none;
+  border:none;
+}
+
+.btn-success {
+  background-color: #28a745; 
+  color:#fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color:#fff;
+}
+
+.btn-warning {
+  background-color: #ffc107; 
+  color:#fff;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.list-group-item span {
+  font-size: 18px; 
+  color: #000000; 
+}
+
+.Toastify__toast--success {
+  background: #ffffff;
+  color:#000000;
+  box-shadow:1px 1px 5px  #dddd;
+}
+
+
+@media (max-width:600px){
+  .list-group-item{
+    flex-direction: column;
+    gap: 20px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .btn{
+    font-size: 12px;
   }
 }
